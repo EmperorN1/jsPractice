@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif ;
+}
+
+body {
+    background: #C4C4C4;
+    padding: 62px 77px;
+}
+
+.container {
+    max-width: 500px;
+}
+
+.container .search-input {
+    width: 100%;
+    background: #fff;
+}
+
+.search-input input{
+    height: 61px;
+    width: 100%;
+    padding: 5px 13px;
+    font-size: 48px;
+}
+
+.search-input .drop-down_box{
+    max-height: 220px;
+}
+
+.drop-down_box li{
+    cursor: pointer;
+    padding: 0 13px;
+    list-style: none;
+    font-size: 30px;
+    background: #E3E3E3;
+    border: 2px solid #000000;
+}
+
+.drop-down_box li:hover {
+    background: #65CDF9;
+}
+
+.result {
+    position: absolute;
+    left: 74px;
+    top: 380px;
+}
+
+.result .repository {
+    position: relative;
+    width: 503px;
+    height: 101px;
+    padding: 8px 16px;
+    font-size: 24px;
+    line-height: 28px;
+    background: #E27BEB;
+    border: 1px solid #000000;
+}
+
+.repository .delete {
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    right: 34px;
+    width: 50px;
+    height: 50px;
+}
+
+.delete::after, .delete::before {
+    display: block;
+    position: absolute;
+    top: 20px;
+    content: ' ';
+    width: 60px;
+    height: 4px;
+    background: #FF0000;
+}
+
+.delete::before {
+    transform: rotate(45deg);
+}
+
+.delete::after {
+    transform: rotate(-45deg); 
+}
